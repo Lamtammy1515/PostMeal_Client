@@ -1,9 +1,11 @@
 import React from 'react';
 
+import MealsContainer from './MealsContainer';
+
 const App = () => {
     return (
         <div>
-            Hello World
+           <MealsContainer/>
         </div>
     )
 }
