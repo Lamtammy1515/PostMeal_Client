@@ -1,6 +1,6 @@
-export const mealsReducer = (state = [], action) => {
+export const usersReducer = (state = [], action) => {
     switch(action.type) {
-        case "FETCH_MEALS":
+        case "FETCH_USERS":
             return action.payload
         default:
             return state
