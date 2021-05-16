@@ -9,7 +9,7 @@ class MealsForm extends Component {
         title: '',
         description: '',
         meal_time: '',
-        user_id: ''
+        //user_id: ''
     }
 
 handleChange = e => {
@@ -22,7 +22,12 @@ handleChange = e => {
 
 handleSubmit = e => {
     e.preventDefault()
-    this.props.addMeal(this.state)
+    let obj = {
+        title: this.state.title,
+        meal_time: this.state.meal_time,
+        description: this.state.description
+      }
+    this.props.addMeal(obj)
 }
 
     render() {
@@ -42,5 +47,7 @@ handleSubmit = e => {
             </form>
         )
     }
+
+    
 }
 export default connect(null, { addMeal })(MealsForm);

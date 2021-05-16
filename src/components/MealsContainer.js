@@ -14,7 +14,7 @@ class MealsContainer extends Component {
     render() {
         return (
             <div>
-                Meals Container
+                <h2>POST-MEAL</h2>
                 <MealsForm/>
             </div>
         )

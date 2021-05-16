@@ -9,11 +9,11 @@ export const fetchMeals = () => {
 }
 
 export const addMeal = meal => {
-    return dispatch => {
-        fetch('http://localhost:3000/api/v1/meals', {
+    return (dispatch) => {
+        fetch('http://localhost:3000/api/v1/meals',{
         method: 'POST',
-        body: JSON.stringify(meal),
-        headers: { 'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify(meal)
     })
     .then(resp => resp.json())
     .then(meal => dispatch({ type: 'ADD_MEAL', payload: meal}))
