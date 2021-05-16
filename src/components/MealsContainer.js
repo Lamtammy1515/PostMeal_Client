@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 import { fetchMeals } from '../actions/mealsActions'
 import MealsForm from './MealsForm'
+import MealsList from './MealsList'
 
 class MealsContainer extends Component {
 
