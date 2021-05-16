@@ -1,11 +1,22 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default class MealsContainer extends Component {
+import { fetchMeals } from '../actions/mealsActions'
+import MealsForm from './MealsForm'
+
+class MealsContainer extends Component {
+
+    componentDidMount() {
+        this.props.fetchMeals()
+    }
+
     render() {
         return (
             <div>
                 Meals Container
+                <MealsForm/>
             </div>
         )
     }
 }
+export default connect(null, { fetchMeals })(MealsContainer);
