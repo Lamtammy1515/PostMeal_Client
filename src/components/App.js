@@ -2,6 +2,7 @@ import React from 'react';
 
 import Router from './Router'
 import MealsContainer from './MealsContainer'
+import CommentsContainer from './CommentsContainer';
 
 const App = () => {
     return (

@@ -19,3 +19,4 @@ export const addMeal = meal => {
     .then(meal => dispatch({ type: 'ADD_MEAL', payload: meal}))
     }
 }
+

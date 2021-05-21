@@ -8,26 +8,21 @@ class MealsForm extends Component {
     state = { 
         title: '',
         description: '',
-        meal_time: '',
-        //user_id: ''
+        meal_time: ''
     }
 
 handleChange = e => {
     const { name, value } = e.target
-
     this.setState({
         [name]: value
     })
 }
 
 handleSubmit = e => {
+    alert("New Meal Post Updated!")
     e.preventDefault()
-    let obj = {
-        title: this.state.title,
-        meal_time: this.state.meal_time,
-        description: this.state.description
-      }
-    this.props.addMeal(obj)
+    console.log(e)
+    this.props.addMeal(this.state)
 }
 
     render() {
@@ -43,7 +38,6 @@ handleSubmit = e => {
                 <input type='text' value={this.state.description} onChange={this.handleChange} name='description'/>
                 <br/>
                 <input type='submit' value='Create Post-Meal' />
-
             </form>
         )
     }
