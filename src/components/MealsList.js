@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import MealsContainer from '../components/MealsContainer'
-import CommentsForm from '../components/CommentsForm'
-import CommentsContainer from './CommentsContainer'
+import CommentsForm from './CommentsForm'
+import Comments from './Comments'
 
 const MealsList = ({ meals }) => {
         return (
             <div>
                 {meals.map(meal => 
                 <ul><li key={meal.id}>
-                    {meal.title} - {meal.meal_time} - {meal.description}
+                    {meal.title} - {meal.meal_time} <br/> {meal.description}
                     <br/><br/>
-                    <CommentsContainer/>
+                    <CommentsForm/>
+                    <Comments/>
                     </li></ul>)}
             </div>
         )

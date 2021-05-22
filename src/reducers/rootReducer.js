@@ -7,3 +7,4 @@ export const rootReducer = combineReducers({
     meals: mealsReducer,
     comments: commentsReducer
 })
+

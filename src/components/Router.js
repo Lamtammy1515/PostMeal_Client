@@ -9,10 +9,10 @@ import Comments from './Comments'
 const Router = () => {
         return (
             <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/about' component={About} />
-                <Route path='/meals' component={MealsList} />
-                <Route path='/comments' component={Comments}/>
+                <Route exact path='/api/v1/' component={Home} />
+                <Route path='/api/v1/about' component={About} />
+                <Route path='/api/v1/meals' component={MealsList} />
+                <Route path='/api/v1/comments' component={Comments}/>
             </Switch>
         )
     }

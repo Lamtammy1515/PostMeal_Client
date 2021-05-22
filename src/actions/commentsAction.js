@@ -1,3 +1,4 @@
+
 export const fetchComments = () => {
     return (dispatch) => {
     fetch('http://localhost:3000/api/v1/comments')
@@ -7,26 +8,18 @@ export const fetchComments = () => {
 }
 
 
-export const addComment = (commentInput) => {
-
-    let obj = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-            },
-        body: JSON.stringify(commentInput)
-    }
-
-
+export const addComment = comment => {
     return (dispatch) => {
-        fetch('http://localhost:3000/api/v1/comments', obj)
-        .then(resp => resp.json())
-        .then(data => {
-            dispatch({ type: 'ADD_COMMENT', comment: data })
-        })
+        fetch('http://localhost:3000/api/v1/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify(comment)
+    })
+    .then(resp => resp.json())
+    
+    .then(comment => dispatch({ type: 'ADD_COMMENT', payload: comment}))
     }
-
 }
+
 
 

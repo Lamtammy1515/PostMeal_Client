@@ -20,13 +20,13 @@ handleChange = e => {
 
 handleSubmit = e => {
     alert("New Meal Post Updated!")
-    e.preventDefault()
     console.log(e)
     this.props.addMeal(this.state)
 }
 
     render() {
         return (
+            <div><u><h2>Create Post Meal Below</h2></u> 
             <form onSubmit={this.handleSubmit}>
                 <label>Title:</label>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name='title'/>
@@ -37,8 +37,8 @@ handleSubmit = e => {
                 <label>Description:</label>
                 <input type='text' value={this.state.description} onChange={this.handleChange} name='description'/>
                 <br/>
-                <input type='submit' value='Create Post-Meal' />
-            </form>
+                <input type='submit' value='Create Post-Meal' /><hr/>
+            </form></div>
         )
     }
 

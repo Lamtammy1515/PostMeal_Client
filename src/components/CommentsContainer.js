@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchComments } from '../actions/commentsAction'
-import CommentsForm from './CommentsForm'
+// import Comments from './Comments'
 
 class CommentsContainer extends Component {
-
+    state = {
+        comment: ''
+      }
     componentDidMount() {
         this.props.fetchComments()
     }
@@ -13,7 +15,7 @@ class CommentsContainer extends Component {
     render() {
         return (
             <div>
-                <CommentsForm/>
+               {/* <Comments/> */}
             </div>
         )
     }

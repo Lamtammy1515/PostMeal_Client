@@ -18,19 +18,19 @@ handleChange = e => {
 
 handleSubmit = e => {
     alert("New Comment Post!")
-    e.preventDefault()
     console.log(e)
     this.props.addComment(this.state)
 }
 
     render() {
         return (
+            <div class="comment-form">
             <form onSubmit={this.handleSubmit}>
-                <label>Comment:</label>
-                <input type='text' value={this.state.comment} onChange={this.handleChange} name='comment'/>
-                <br/>
-                <input type='submit' value='Post' />
+                <label>ADD COMMENT BELOW:</label><br/>
+                <textarea placeholder="What are your thoughts?" type='text' value={this.state.comment} onChange={this.handleChange} name='comment'/>
+                <input type='submit' value='Post' /><br/>
             </form>
+            </div>
         )
     }
 
