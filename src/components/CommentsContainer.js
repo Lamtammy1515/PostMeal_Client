@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { fetchComments } from '../actions/commentsAction'
-// import Comments from './Comments'
+
 
 class CommentsContainer extends Component {
     state = {
@@ -15,7 +15,7 @@ class CommentsContainer extends Component {
     render() {
         return (
             <div>
-               {/* <Comments/> */}
+               
             </div>
         )
     }
