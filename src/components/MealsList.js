@@ -11,8 +11,8 @@ const MealsList = ({ meals }) => {
                 <ul><li key={meal.id}>
                     {meal.title} - {meal.meal_time} <br/> {meal.description}
                     <br/><br/>
-                    <CommentsForm/>
-                    <Comments/>
+                    <CommentsForm mealId={meal.id}/>
+                    <Comments mealId={meal.id}/>
                     </li></ul>)}
             </div>
         )

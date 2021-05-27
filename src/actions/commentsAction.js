@@ -8,12 +8,13 @@ export const fetchComments = () => {
 }
 
 
-export const addComment = comment => {
+export const addComment = (comment, mealId) => {
+
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/comments', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
-        body: JSON.stringify(comment)
+        body: JSON.stringify({comment, meal_id: mealId})
     })
     .then(resp => resp.json())
     

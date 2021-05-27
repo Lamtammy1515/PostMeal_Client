@@ -2,10 +2,13 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 
-const Comments = ({ comments }) => {
+const Comments = ({ comments, mealId }) => {
         return (
             <div>
-                 {comments.map(c => 
+                 {comments.filter(function(comment){
+                     return comment.meal_id === mealId
+                 }).map(c => 
+                
                 <ul><li key={c.id}>
                     {c.comment}
                     <br/><br/>
@@ -17,5 +20,6 @@ const Comments = ({ comments }) => {
 const mapStateToProps = state => {
     return { comments: state.comments}
 }
+
 
 export default connect(mapStateToProps)(Comments);

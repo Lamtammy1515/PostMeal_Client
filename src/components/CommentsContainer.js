@@ -8,6 +8,7 @@ class CommentsContainer extends Component {
     state = {
         comment: ''
       }
+      
     componentDidMount() {
         this.props.fetchComments()
     }
@@ -15,7 +16,6 @@ class CommentsContainer extends Component {
     render() {
         return (
             <div>
-               
             </div>
         )
     }

@@ -17,9 +17,9 @@ handleChange = e => {
 }
 
 handleSubmit = e => {
-    alert("New Comment Post!")
+    e.preventDefault()
     console.log(e)
-    this.props.addComment(this.state)
+    this.props.addComment(this.state, this.props.mealId)
 }
 
     render() {
