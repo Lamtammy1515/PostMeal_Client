@@ -9,7 +9,7 @@ const MealsList = ({ meals }) => {
             <div>
                 {meals.map(meal => 
                 <ul><li key={meal.id}>
-                    {meal.title} - {meal.meal_time} <br/> {meal.description}
+                    <h2>{meal.title} [{meal.meal_time}]</h2>-{meal.description}
                     <br/><br/>
                     <CommentsForm mealId={meal.id}/>
                     <Comments mealId={meal.id}/>
