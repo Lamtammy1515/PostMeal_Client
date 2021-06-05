@@ -70,3 +70,22 @@
     font-size: 16px;
     resize: none;
   }
+
+  button {
+    width: 40%;
+    background-color: plum;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: pink;
+  }
+
+  body {
+    background-color: rgb(255, 233, 255);
+  }

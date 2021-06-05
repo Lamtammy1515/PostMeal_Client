@@ -8,7 +8,8 @@ class MealsForm extends Component {
     state = { 
         title: '',
         description: '',
-        meal_time: ''
+        meal_time: '',
+        id: ''
     }
 
 handleChange = e => {
@@ -26,10 +27,6 @@ handleSubmit = e => {
 
     render() {
         return (
-
-            
-
-
             <div><u><h2>Create Post Meal Below</h2></u> 
             <form onSubmit={this.handleSubmit}>
                 <label>Title:</label><br/>
@@ -45,7 +42,5 @@ handleSubmit = e => {
             </form></div>
         )
     }
-
-    
 }
 export default connect(null, { addMeal })(MealsForm);

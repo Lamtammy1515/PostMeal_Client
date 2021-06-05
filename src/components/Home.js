@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import {Link} from "react-router-dom"
 
 const Home = () => {
         return (
             <div>
-                Home Page
+
+                <h1 className="Color">Welcome to the <u>Post-Meal</u> Website<br/><br/>Share your meal experience by filling in the form above</h1>
                 <br/><br/>
-                <button class="button button2"><h3><Link to="/api/v1/meals">ALL MEAL POSTS</Link></h3></button>
             </div>
         )
     }

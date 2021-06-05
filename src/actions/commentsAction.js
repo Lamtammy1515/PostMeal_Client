@@ -16,8 +16,7 @@ export const addComment = (comment, mealId) => {
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify({comment, meal_id: mealId})
     })
-    .then(resp => resp.json())
-    
+    .then(resp => resp.json())   
     .then(comment => dispatch({ type: 'ADD_COMMENT', payload: comment}))
     }
 }
