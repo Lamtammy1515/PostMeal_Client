@@ -4,10 +4,7 @@ import { connect } from 'react-redux'
 import { deleteMeal } from '../actions/mealsActions';
 
 class DeleteMeal extends React.Component {
-    // state = { 
-    //     id:''
-    // }
-
+    
     constructor(props) {
         super(props);
     
