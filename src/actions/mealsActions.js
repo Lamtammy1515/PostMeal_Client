@@ -23,13 +23,19 @@ export const addMeal = meal => {
 export const deleteMeal = (meal) => {
     return (dispatch) => {
         fetch(`http://localhost:3000/api/v1/meals/${meal.id}`,
-        {method: 'DELETE'})
+        {method: 'DELETE',
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify(meal)
+    })
         .then(resp => resp.json())
+        .then(console.log('deleted'))
         .then(meal => {
             dispatch({ type: 'DELETE_MEAL', payload: meal})
         })
-        .then(console.log('Deleted'))
     }
+        
+        //.then(meal => dispatch({ type: 'DELETE_MEAL', payload: meal}))
+    
 
 }
 

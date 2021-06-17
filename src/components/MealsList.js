@@ -6,17 +6,18 @@ import Comments from './Comments'
 import DeleteMeal from './DeleteMeal'
 
 const MealsList = ({ meals }) => {
-
+    console.log(meals)
         return (
             <div>
-                {meals.map(meal => 
-                <ul><li key={meal.id}>
-                    <h2>{meal.title} [{meal.meal_time}]</h2>-{meal.description}<br/>
+
+                {meals && meals.map(meal => 
+                <ul><div key={meal.id}>
+                   <blockquote> <u><h2>{meal.title} [{meal.meal_time}]</h2></u>{meal.description}<br/>
                     <br/>
-                    <DeleteMeal mealId={meal.id}/>
+                    <DeleteMeal mealId={meal.id} />
                     <CommentsForm mealId={meal.id}/>
-                    <Comments mealId={meal.id}/>
-                    </li></ul>)}
+                    <Comments mealId={meal.id}/></blockquote><br/>
+                    </div></ul>)}
             </div>
         )
     }

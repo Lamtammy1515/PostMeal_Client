@@ -9,10 +9,10 @@ const Comments = ({ comments, mealId }) => {
                      return comment.meal_id === mealId
                  }).map(c => 
                 
-                <ul><li key={c.id}>
-                    {c.comment}
+                <ul><div key={c.id} >
+                     ➟ {c.comment} <hr/>
                     <br/><br/>
-                    </li></ul>)}
+                    </div></ul>)}
             </div>
         )
     }

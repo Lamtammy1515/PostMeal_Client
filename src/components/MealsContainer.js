@@ -11,6 +11,8 @@ class MealsContainer extends Component {
         this.props.fetchMeals()
     }
 
+    
+
     render() {
         return (
             <div>

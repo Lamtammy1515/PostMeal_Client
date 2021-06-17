@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { deleteMeal } from '../actions/mealsActions';
 
 class DeleteMeal extends React.Component {
-    
+
     constructor(props) {
         super(props);
     
