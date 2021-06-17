@@ -8,8 +8,7 @@ export const mealsReducer = (state = [], action) => {
         case 'DELETE_MEAL':
             console.log(state)
             console.log(action.payload)
-            const meals = state.filter(meal => meal.id !== action.payload);
-            return {meals};
+            return state.filter(meal => meal.id !== +action.payload.id);
         default:
             return state
     }
