@@ -1,4 +1,3 @@
-
 export const fetchComments = () => {
     return (dispatch) => {
     fetch('http://localhost:3000/api/v1/comments')

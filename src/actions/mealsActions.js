@@ -1,5 +1,3 @@
-// create an action that is going to fetch the meals from api
-
 export const fetchMeals = () => {
     return (dispatch) => {
     fetch('http://localhost:3000/api/v1/meals')
@@ -33,9 +31,5 @@ export const deleteMeal = (meal) => {
             dispatch({ type: 'DELETE_MEAL', payload: meal})
         })
     }
-        
-        //.then(meal => dispatch({ type: 'DELETE_MEAL', payload: meal}))
-    
-
 }
 

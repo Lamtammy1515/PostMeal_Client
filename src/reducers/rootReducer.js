@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux'
-
 import { mealsReducer } from './mealsReducer'
 import { commentsReducer } from './commentsReducer'
 
