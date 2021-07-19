@@ -20,5 +20,3 @@ export const addComment = (comment, mealId) => {
     }
 }
 
-
-

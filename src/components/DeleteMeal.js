@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux'
-
 import { deleteMeal } from '../actions/mealsActions';
 
 class DeleteMeal extends React.Component {

@@ -9,18 +9,18 @@ class CommentsForm extends Component {
         comment:''
     }
 
-handleChange = e => {
-    const { name, value } = e.target
-    this.setState({
-        [name]: value
-    })
-}
+    handleChange = e => {
+        const { name, value } = e.target
+        this.setState({
+            [name]: value
+        })
+    }
 
-handleSubmit = e => {
-    e.preventDefault()
-    console.log(e)
-    this.props.addComment(this.state, this.props.mealId)
-}
+    handleSubmit = e => {
+        e.preventDefault()
+        console.log(e)
+        this.props.addComment(this.state, this.props.mealId)
+    }
 
     render() {
         return (

@@ -12,18 +12,18 @@ class MealsForm extends Component {
         id: ''
     }
 
-handleChange = e => {
-    const { name, value } = e.target
-    this.setState({
-        [name]: value
-    })
-}
+    handleChange = e => {
+        const { name, value } = e.target
+        this.setState({
+            [name]: value
+        })
+    }
 
-handleSubmit = e => {
-    e.preventDefault()
-    console.log(e)
-    this.props.addMeal(this.state)
-}
+    handleSubmit = e => {
+        e.preventDefault()
+        console.log(e)
+        this.props.addMeal(this.state)
+    }
 
     render() {
         return (
@@ -43,4 +43,5 @@ handleSubmit = e => {
         )
     }
 }
+
 export default connect(null, { addMeal })(MealsForm);
