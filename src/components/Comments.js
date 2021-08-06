@@ -11,7 +11,6 @@ const Comments = ({ comments, mealId }) => {
                 
                 <ul><div key={c.id} className="borded">
                       ➥ {c.comment} 
-                    
                     <DeleteComment commentId = {c.id}/>
                     </div></ul>)}
             </div>
