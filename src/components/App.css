@@ -12,11 +12,15 @@
 }
 
 .Color {
-    color: purple;
-}
+    color: black;
+    padding: 60px;
+    text-align: center;
+    font-size: 45px;
+    background-image: url("https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg");
+  }
 
 .button {
-    background-color: plum;
+    background-color: rgb(252, 246, 170);
     border: none;
     color: white;
     padding: 2px 32px;
@@ -28,6 +32,7 @@
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    border: 2px solid rgb(223, 202, 18);
   }
   
   .button2:hover {
@@ -46,8 +51,8 @@
   
   input[type=submit] {
     width: 80%;
-    background-color: plum;
-    color: white;
+    background-color: rgb(250, 210, 79);
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -56,7 +61,7 @@
   }
   
   input[type=submit]:hover {
-    background-color: pink;
+    background-color: white;
   }
 
   textarea {
@@ -69,12 +74,14 @@
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+    font-family: "Courier New";
   }
 
   button {
+    font-family: "Courier New";
     width: 30%;
-    background-color: plum;
-    color: white;
+    background-color: rgb(250, 210, 79);
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -83,23 +90,31 @@
   }
 
   button:hover {
-    background-color: pink;
+    background-color: white;
   }
 
   body {
-    background-color: rgb(255, 233, 255);
+    background-color: rgb(252, 252, 252);
   }
 
   blockquote {
-    font-style:courier;
     line-height:32px;
     font-size:20px;
-    color: rgb(92, 56, 92);
-    background: rgb(252, 208, 252);
+    color: black;
+    background: rgb(255, 238, 145);
     margin:10px;
     padding: 15px 20px 15px 20px;
     border-radius: 5px;
+    font-family: "Courier New";
+    
+    width: 550px;
+    
+    border: 5px solid rgb(73, 73, 73);
+    margin: 0;
     }
 
+    div { 
+      font-family: "Courier New";
+    }
 
 

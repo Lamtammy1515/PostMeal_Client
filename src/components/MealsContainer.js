@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
 import { fetchMeals } from '../actions/mealsActions'
 import MealsForm from './MealsForm'
 
