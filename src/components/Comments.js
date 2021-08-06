@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import DeleteComment from './DeleteComment'
 
 const Comments = ({ comments, mealId }) => {
         return (
@@ -8,9 +9,10 @@ const Comments = ({ comments, mealId }) => {
                      return comment.meal_id === mealId
                  }).map(c => 
                 
-                <ul><div key={c.id} >
-                     ➟ {c.comment} <hr/>
-                    <br/><br/>
+                <ul><div key={c.id} className="borded">
+                      ➥ {c.comment} 
+                    
+                    <DeleteComment commentId = {c.id}/>
                     </div></ul>)}
             </div>
         )

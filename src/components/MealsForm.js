@@ -27,7 +27,7 @@ class MealsForm extends Component {
 
     render() {
         return (
-            <div><u><h2>Create Post Meal Below</h2></u> 
+            <div><u><h2>Create Meal Post Below</h2></u> 
             <form onSubmit={this.handleSubmit}>
                 <label>Title:</label><br/>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name='title'/>
@@ -38,7 +38,7 @@ class MealsForm extends Component {
                 <label>Description:</label><br/>
                 <textarea placeholder="Description of meal..." type='text' value={this.state.description} onChange={this.handleChange} name='description'/>
                 <br/>
-                <input type='submit' value='Create Post-Meal' class="button button1"/><hr/>
+                <input type='submit' value='Create Post-Meal' class="button button1"/><br/><br/><br/>
             </form></div>
         )
     }

@@ -18,7 +18,7 @@ const MealsList = ({ meals }) => {
                     <br/>
                     <DeleteMeal mealId={meal.id} />
                     <CommentsForm mealId={meal.id}/>
-                    <Comments mealId={meal.id}/></blockquote><br/>
+                    <Comments mealId={meal.id}/></blockquote>
                     </div></ul>)}
             </div>
         )
