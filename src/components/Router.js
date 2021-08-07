@@ -5,10 +5,13 @@ import Home from '../components/Home'
 import MealsList from '../components/MealsList'
 import About from '../components/About'
 import Comments from './Comments'
+import SingleMeal from './SingleMeal'
 
 const Router = () => {
         return (
             <Switch>
+                <Route path='/api/v1/meals/:id' component={SingleMeal}/>
+
                 <Route exact path='/api/v1/' component={Home} />
                 <Route path='/api/v1/about' component={About} />
                 <Route path='/api/v1/meals' component={MealsList} />

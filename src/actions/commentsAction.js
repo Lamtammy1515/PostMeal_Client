@@ -8,7 +8,6 @@ export const fetchComments = () => {
 
 
 export const addComment = (comment, mealId) => {
-
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/comments', {
         method: 'POST',
