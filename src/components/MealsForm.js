@@ -38,7 +38,7 @@ class MealsForm extends Component {
                 <label>Description:</label><br/>
                 <textarea placeholder="Description of meal..." type='text' value={this.state.description} onChange={this.handleChange} name='description'/>
                 <br/>
-                <input type='submit' value='Create Post-Meal' class="button button1"/><br/><br/><br/>
+                <input type='submit' value='Create Post-Meal' class="create"/><br/><br/><br/>
             </form></div>
         )
     }
