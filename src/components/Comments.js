@@ -2,8 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import DeleteComment from './DeleteComment'
 import LikeButton from './LikeButton'
+import { fetchComments } from "../actions/commentsAction"
+import { useDispatch } from "react-redux"
+import { useEffect } from "react"
 
 const Comments = ({ comments, mealId }) => {
+        const dispatch = useDispatch()
+
+        useEffect(() => {
+            dispatch(fetchComments())
+        }, [dispatch])
 
         return (
             <div>
@@ -20,9 +28,8 @@ const Comments = ({ comments, mealId }) => {
         )
     }
 
-
 const mapStateToProps = state => {
     return { comments: state.comments}
 }
 
-export default connect(mapStateToProps)(Comments);
+export default connect(mapStateToProps, { fetchComments })(Comments);

@@ -4,14 +4,11 @@ import CommentsForm from './CommentsForm'
 import Comments from './Comments'
 import DeleteMeal from './DeleteMeal'
 import MealsContainer from './MealsContainer'
-import CommentsContainer from './CommentsContainer'
-//import { fetchComments } from '../actions/commentsActions'
 
 const MealsList = ({ meals }) => {
         return (
             <div>
                 <MealsContainer/>
-               <CommentsContainer /> 
                 {meals && meals.map(meal => 
                 <ul><div key={meal.id}>
                    <blockquote> <u><h2>{meal.title} [{meal.meal_time}]</h2></u>{meal.description}<br/>

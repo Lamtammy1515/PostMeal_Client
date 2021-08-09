@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { deleteComment } from '../actions/commentsAction';
+import { deleteComment, fetchComments } from '../actions/commentsAction';
 
 class DeleteComment extends React.Component {
 
@@ -12,6 +12,10 @@ class DeleteComment extends React.Component {
         };
         this.handleDeleteComment = this.handleDeleteComment.bind(this)
       }
+
+      componentDidMount() {
+        this.props.fetchComments()
+    }
     
 
     handleDeleteComment = (e) => {
@@ -28,4 +32,4 @@ class DeleteComment extends React.Component {
         )
     }
 }
-export default connect(null, { deleteComment })(DeleteComment)
+export default connect(null, { deleteComment, fetchComments })(DeleteComment)
