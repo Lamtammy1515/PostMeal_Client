@@ -81,7 +81,7 @@
     font-family: "Courier New";
     width: 30%;
     background-color: rgb(250, 210, 79);
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -128,3 +128,9 @@
       letter-spacing: 2px;
       font-size: 140%;
     }
+
+    .single { 
+      font-family: courier;
+      font-size: 30px;
+    }
+    

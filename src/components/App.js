@@ -8,7 +8,7 @@ const App = () => {
         <div>
             <center><b>
             <button class="button button2"><h3><Link to="/api/v1/">HOME</Link></h3></button>
-            <button class="button button2"><h3><Link to="/api/v1/meals">CREATE MEAL POST</Link></h3></button>
+            <button class="button button2"><h3><Link to="/api/v1/meals">CREATE POST</Link></h3></button>
             <button class="button button2"><h3><Link to="/api/v1/about">ABOUT</Link></h3></button>     
             </b>
             <h1 className="Color">✎POST-MEAL</h1>

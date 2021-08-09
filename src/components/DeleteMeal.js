@@ -23,7 +23,7 @@ class DeleteMeal extends React.Component {
     render() {
         return (
         <div>
-            <button onClick={this.handleDeleteMeal}>DELETE</button>
+            <button onClick={this.handleDeleteMeal}>DELETE POST</button>
         </div>
         )
     }

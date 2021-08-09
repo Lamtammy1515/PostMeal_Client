@@ -1,4 +1,4 @@
-
+//create action that fetches meals from API 
 export const fetchMeals = () => {
     return (dispatch) => {
     fetch('http://localhost:3000/api/v1/meals')
@@ -7,6 +7,7 @@ export const fetchMeals = () => {
     }
 }
 
+//action that creates a meal  
 export const addMeal = meal => {
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/meals',{
@@ -19,6 +20,7 @@ export const addMeal = meal => {
     }
 }
 
+//create action that deletes a meal from API 
 export const deleteMeal = (meal) => {
     return (dispatch) => {
         fetch(`http://localhost:3000/api/v1/meals/${meal.id}`,

@@ -1,5 +1,3 @@
-// react-dux, redux, thunk
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux'
