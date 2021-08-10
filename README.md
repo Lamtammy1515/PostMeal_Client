@@ -7,6 +7,9 @@ React is a Javascript library that is used to build single page applications.
 Start off by cloning this repo. 
 
 In your terminal, cd into postmeal_client.
+```bash
+cd postmeal_client
+```
 
 Run "npm install" in your terminal to save all the packages needed into its dependencies by default. 
 ```bash
