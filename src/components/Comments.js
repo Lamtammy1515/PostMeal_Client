@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux"
 import { useEffect } from "react"
 
 const Comments = ({ comments, mealId }) => {
+    
         const dispatch = useDispatch()
 
         useEffect(() => {
