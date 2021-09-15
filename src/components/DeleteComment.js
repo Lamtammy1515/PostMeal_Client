@@ -21,7 +21,6 @@ class DeleteComment extends React.Component {
     handleDeleteComment = (e) => {
         e.preventDefault()  
         this.props.deleteComment(this.state, this.props.commentId);
-        console.log(this.state)
     }
 
     render() {

@@ -21,7 +21,6 @@ class MealsForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log(e)
         this.props.addMeal(this.state)
     }
 

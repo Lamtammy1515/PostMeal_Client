@@ -17,7 +17,6 @@ class DeleteMeal extends React.Component {
     handleDeleteMeal = (e) => {
         e.preventDefault()  
         this.props.deleteMeal(this.state, this.props.mealId);
-        console.log(this.state)
     }
 
     render() {
